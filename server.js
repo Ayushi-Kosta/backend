@@ -125,13 +125,13 @@ const user_router = require('./Routers/userRouter');
 // (user_router is a mini app)
 app.use("/user", user_router); // here / is the base root path
 
-const auth_router = require('./Routers/authRouter');
-app.use("/auth", auth_router);
+// const auth_router = require('./Routers/authRouter');
+// app.use("/auth", auth_router);
 
 
-
-
-
+const plan_router = require('./Routers/planRouter');
+// (user_router is a mini app)
+app.use("/plans", plan_router); // here / is the base root path
 
 
 app.listen(3000, () => {
